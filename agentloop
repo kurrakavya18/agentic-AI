@@ -1,0 +1,27 @@
+while True:
+    # 1. OBSERVE
+    situation = input("Observe: ")
+
+    # 2. DECIDE
+    if "hungry" in situation.lower():
+        decision = "eat"
+    elif "tired" in situation.lower():
+        decision = "sleep"
+    elif "study" in situation.lower():
+        decision = "study"
+    elif "exit" in situation.lower():
+        break
+    else:
+        decision = "do nothing"
+
+    # 3. ACT
+    print(f"Decision: {decision}")
+
+    if decision == "eat":
+        print("Action: Eating food 🍽️")
+    elif decision == "sleep":
+        print("Action: Taking rest 😴")
+    elif decision == "study":
+        print("Action: Studying 📚")
+    else:
+        print("Action: Waiting...")
